@@ -20,7 +20,7 @@ public class StampCollector {
 
     public void searchStampCollector(String title) {
         for (String stamp : stamps)
-            if (stamps.contains(title)) {
+            if (stamp.contains(title)) {
                 System.out.println("Марка в наличии");
             } else System.out.println("Марки нет в наличии");
     }
