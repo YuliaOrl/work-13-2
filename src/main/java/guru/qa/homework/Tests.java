@@ -20,7 +20,6 @@ public class Tests {
         stampCollector.printAllStamps();
         System.out.println();
 
-
         SportMan sportMan = new SportMan();
         System.out.println("Спортсмены.");
         System.out.println("Список достижений до болезни:");
