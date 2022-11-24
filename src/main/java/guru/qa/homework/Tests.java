@@ -48,5 +48,14 @@ public class Tests {
         university.printAllSubject();
         university.findSubject(15);
         System.out.println();
+
+        FlowersShop flowersShop = new FlowersShop();
+        System.out.println("Магазин цветов.");
+        String[] flowersArr = {"Мак", "Тюльпан", "Роза", "Гладиолус", "Гвоздика"};
+        flowersShop.addFlowers("Ромашка");
+        flowersShop.addFlowers("Незабудка");
+        flowersShop.addFlowers("Пион");
+        flowersShop.addFlowersArr(flowersArr);
+        flowersShop.printAllFlowers();
     }
 }
