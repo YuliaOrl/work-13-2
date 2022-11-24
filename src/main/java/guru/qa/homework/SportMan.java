@@ -4,26 +4,25 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SportMan {
-    private String name;
-    private String gender;
-    private int age;
-    private Set<String> scores = new HashSet<>();
 
-    public SportMan(String name, String gender, int age) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-    }
+    Set<String> scores = new HashSet<>();
 
-    public void addScores(String score) {
+    void addScores(String score) {
         scores.add(score);
     }
 
-    public void deletePass() {
+    void deletePass() {
         for (String score : scores) {
-            if(score.equals("pass")) {
+            if(score.contains("болезнь")) {
                 this.scores.remove(score);
             }
+        }
+    }
+
+    public void printAllScores() {
+        var array = scores.toArray();
+        for (var i = 0; i < scores.size(); i++) {
+            System.out.println(array[i]);
         }
     }
 }

@@ -1,8 +1,9 @@
-package guru.qa.homework;
+package guru.qa.example;
 
 import java.util.LinkedList;
 
 public class FlowersShop {
+
     private String name;
     private LinkedList<String> flowers;
 
