@@ -20,20 +20,6 @@ public class Tests {
         stampCollector.printAllStamps();
         System.out.println();
 
-        SportMan sportMan = new SportMan();
-        System.out.println("Спортсмены.");
-        System.out.println("Список достижений до болезни:");
-        sportMan.addScores("Рекорд 01");
-        sportMan.addScores("Рекорд 02");
-        sportMan.addScores("Рекорд 03");
-        sportMan.addScores("Рекорд 04");
-        sportMan.addScores("Рекорд 06 болезнь");
-        sportMan.printAllScores();
-        System.out.println("Список достижений после болезни:");
-        sportMan.deletePass();
-        sportMan.printAllScores();
-        System.out.println();
-
         University university = new University();
         System.out.println("Университет.");
         System.out.println("Список предметов и количество студентов в университете:");
@@ -51,11 +37,23 @@ public class Tests {
 
         FlowersShop flowersShop = new FlowersShop();
         System.out.println("Магазин цветов.");
-        String[] flowersArr = {"Мак", "Тюльпан", "Роза", "Гладиолус", "Гвоздика"};
-        flowersShop.addFlowers("Ромашка");
-        flowersShop.addFlowers("Незабудка");
-        flowersShop.addFlowers("Пион");
+        String[] flowersArr = {"Мак", "Тюльпан", "Роза", "Гладиолус", "Гвоздика", "Ромашка", "Незабудка", "Пион"};
         flowersShop.addFlowersArr(flowersArr);
         flowersShop.printAllFlowers();
+        flowersShop.hasFlower("Тюльпан");
+        System.out.println();
+
+        SportMan sportMan = new SportMan();
+        System.out.println("Спортсмены.");
+        System.out.println("Список достижений до болезни:");
+        sportMan.addScores("Рекорд 01");
+        sportMan.addScores("Рекорд 02");
+        sportMan.addScores("Рекорд 03");
+        sportMan.addScores("Рекорд 04");
+        sportMan.addScores("Рекорд 06 болезнь");
+        sportMan.printAllScores();
+        System.out.println("Список достижений после болезни:");
+        sportMan.deletePass();
+        sportMan.printAllScores();
     }
 }

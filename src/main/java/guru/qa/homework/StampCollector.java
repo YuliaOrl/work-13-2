@@ -13,13 +13,13 @@ public class StampCollector {
 
     void deleteStamp(String title) {
         stamps.remove(title);
-        System.out.println("Удаление марки с названием " + title);
+        System.out.println("Удаление марки с названием \"" + title + "\".");
     }
 
     void searchStampCollector(String title) {
         for (String stamp : stamps)
             if (stamp.contains(title)) {
-                System.out.println("Марка с названием " + title + " есть в наличии ");
+                System.out.println("Марка с названием \"" + title + "\" есть в наличии.");
             };
     }
 
@@ -28,7 +28,7 @@ public class StampCollector {
         for (String stamp : stamps) {
             if(stamp.contains(title)) quantity++;
         }
-        System.out.println("Марок с названием " + title + " в наличии " + quantity + " шт.");
+        System.out.println("Марок с названием \"" + title + "\" в наличии " + quantity + " шт.");
     }
 
     void printAllStamps() {

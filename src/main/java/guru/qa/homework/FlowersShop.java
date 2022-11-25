@@ -7,12 +7,17 @@ public class FlowersShop {
 
     LinkedList<String> flowers = new LinkedList<>();
 
-    void addFlowers(String name) {
-        flowers.add(name);
-    }
-
     void addFlowersArr(String[] name) {
         flowers.addAll(Arrays.asList(name));
+    }
+
+    public boolean hasFlower(String name) {
+        System.out.println("Поиск цветка \"" + name + "\" в магазине.");
+        for (String flower : flowers) {
+            if (flower.equals(name)) return true;
+            System.out.println("Цветок \"" + name + "\" есть в наличии.");
+        }
+        return false;
     }
 
     void printAllFlowers() {
@@ -21,5 +26,4 @@ public class FlowersShop {
             System.out.println(text);
         }
     }
-
 }
